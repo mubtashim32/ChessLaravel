@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url('../images/backgrounds/gamesRunning.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+.topbar {
+    width: 100%;
+    height: 80px;
+    background-color: #1A237E;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.cardContainer {
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+}
+.cardContainer:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #7986CB;
+}
+.cardContainer:hover .circle::after {
+    background-color: #4A148C;
+}
+.cardContainer:hover .circle::before {
+    animation: rot 1s infinite ease-in-out alternate;
+}
+.circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.circle::before {
+    content: "";
+    height: 200%;
+    width: 50%;
+    background: linear-gradient(0deg, #2196F3, #BA68C8);;
+    position: absolute;
+    animation: rot 4s infinite linear;
+}
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.circle::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-color: #3949AB;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.vs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: white;
+}
+.player1 {
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.player2 {
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/backgrounds/register.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.formContainer {
+    background-color: #E0F2F1;
+    background-color: white;
+    border-radius: 10px;
+    height: 450px;
+    width: 450px;
+    box-shadow: 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 300px;
+}
+.formHeading {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+}
+.formHeading::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 25px;
+    background-color: blue;
+    bottom: 0px;
+    left: 0px;
+}
+.inputContainer {
+    height: 40px;
+    position: relative;
+    margin: 25px 0px;
+}
+input:focus {
+    border-bottom: 2px solid #1E88E5;
+}
+input:focus ~i{
+    color: #1E88E5;
+}
+.input {
+    background-color: #E0F2F1;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid purple;
+    padding: 0px 25px;
+}
+i {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+::placeholder {
+    font-size: 16px;
+}
+.buttonContainer {
+    margin-top: 20px;
+}
+.buttonContainer input {
+    border: none;
+    background-color: #1E88E5;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 2px black;
+}
+.buttonContainer:hover input {
+    cursor: pointer;
+    background-color: #1976D2;
+}
+.formFooter {
+    margin-top: 30px;
+    font-size: 16px;
+}
+a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #1E88E5;
+}
+::-ms-reveal {
+    position: absolute;
+    right: 5px;
+}
+.cbContainer {
+    margin-top: -10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.cbContent {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.cbText {
+    width: 150px;
+}
+#rem {
+    height: 14px;
+}
+.cbContainer a {
+    font-size: 14px;
+}

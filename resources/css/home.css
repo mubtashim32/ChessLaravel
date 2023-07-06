@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+    color: white;
+    font-size: 20px;
+}
+body {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    background-image: url('/public/images/homeBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.mainRight {
+    height: 100vh;
+    width: 100%;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.heading {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    height: 500px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardContainer {
+    height: 180px;
+    width: 180px;
+    background-color: #7E57C2;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.cardContainer:hover {
+    cursor: pointer;
+    border: 2px solid #311B92;
+    box-shadow: 0px 0px 10px rgb(69, 39, 160);
+}
+.cardContainer:hover .text{
+    background-color: #311B92;
+}
+.cardContainer img {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+.text {
+    height: 45px;
+    width: 100%;
+    background-color: #5E35B1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+a {
+    text-decoration: none;
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(69, 90, 100, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 20px;
+}
+.top1 a {
+    width: 40px;
+}
+.top2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    padding: 0px 50px;
+    border-radius: 10px;
+    background-color: rgba(77, 182, 172, 0.05);
+    box-shadow: 0px 0px 3px;
+}
+.top2:hover {
+    box-shadow: 0px 0px 5px 2px white;
+}
+.photo {
+    margin-right: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.username {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+.country {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+.photo img {
+    height: 80px;
+    width: 80px;
+}
+.country img {
+    height: 30px;
+}
+
+
+
+
+/* new */
+.links {
+    margin: 20px 0px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.links a:hover {
+    color: #E0E0DF;
+}
+.image-links img {
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.image-links img:hover {
+    cursor: pointer;
+}
+.image-links {
+    display: flex;
+    margin-bottom: 15px;
+}
+.image-links-left {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.image-links-left div {
+    margin-left: 2px;
+    margin-right: 3px;
+    height: 20px;
+    width: 20px;
+}
+.image-links-left div:hover {
+    cursor: pointer;
+}
+.image-links-right {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.image-links-right div {
+    margin-left: 2px;
+    margin-right: 3px;
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+}
+.image-links-right div:hover {
+    cursor: pointer;
+}
+#apple {
+    background-image: url("/public/images/res/colored-icons/no-color/apple.png");
+    background-size: 20px;
+}
+#apple:hover {
+    background-image: url("/public/images/res/colored-icons/color/apple.png");
+}
+#android {
+    background-image: url("/public/images/res/colored-icons/no-color/android.png");
+    background-size: 20px;
+}
+#android:hover {
+    background-image: url("/public/images/res/colored-icons/color/android.png");
+}
+#tiktok {
+    background-image: url("/public/images/res/colored-icons/no-color/tiktok.png");
+    background-size: 20px;
+}
+#tiktok:hover {
+    background-image: url("/public/images/res/colored-icons/color/tiktok.png");
+}
+#twitter {
+    background-image: url("/public/images/res/colored-icons/no-color/twitter.png");
+    background-size: 20px;
+}
+#twitter:hover {
+    background-image: url("/public/images/res/colored-icons/color/twitter.png");
+}
+#youtube {
+    background-image: url("/public/images/res/colored-icons/no-color/youtube.png");
+    background-size: 20px;
+}
+#youtube:hover {
+    background-image: url("/public/images/res/colored-icons/color/youtube.png");
+}
+#twitch {
+    background-image: url("/public/images/res/colored-icons/no-color/twitch.png");
+    background-size: 20px;
+}
+#twitch:hover {
+    background-image: url("/public/images/res/colored-icons/color/twitch.png");
+}
+#instagram {
+    background-image: url("/public/images/res/colored-icons/no-color/instagram.png");
+    background-size: 20px;
+}
+#instagram:hover {
+    background-image: url("/public/images/res/colored-icons/color/instagram.png");
+}
+#discord {
+    background-image: url("/public/images/res/colored-icons/no-color/discord.png");
+    background-size: 20px;
+}
+#discord:hover {
+    background-image: url("/public/images/res/colored-icons/color/discord.png");
+}
+
+
+
+/* sidebar */
+.sidebar {
+    background-color: rgb(33, 33, 33);
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+.sidebar-top {
+    margin-top: 10px;
+}
+.sidebar-top a {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+.sidebar-top img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.sidebar-top-content-link {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 50px;
+    margin-left: 10px;
+}
+.sidebar-top-content-panel {
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    left: 150px;
+    top: 0px;
+    background-color: #22211F;
+    display: none;
+    padding-left: 20px;
+}
+.sidebar-top-content-panel-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+}
+.sidebar-top-content-panel a {
+    font-size: 15px;
+    font-weight: 600;
+}
+.sign-up {
+    background-color: #373533;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 10px;
+}
+.log-in {
+    background-color: #85a741;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 10px;
+}
+.sign-up a, .log-in a {
+    font-weight: 700;
+    font-size: 14px;
+}
+.sidebar-bottom {
+    margin-bottom: 30px;
+}
+.sidebar-bottom a {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+.sidebar-bottom img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.sidebar-bottom-content {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.sidebar-bottom-content-link {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+.sidebar-top-content:hover, .sidebar-bottom-content:hover {
+    background-color: #131418;
+    cursor: pointer;
+}
+.log-in:hover {
+    background-color: #95BB4A;
+}
+.sign-up:hover {
+    background-color: #413f3c;
+}
+.play:hover .play-panel {
+    display: block;
+}
+.puzzles:hover .puzzles-panel {
+    display: block;
+}
+.learn:hover .learn-panel {
+    display: block;
+}
+.news:hover .news-panel {
+    display: block;
+}
+.sidebar-top-content-panel-link:hover {
+    background-color: #1D1C1C;
+}
+
